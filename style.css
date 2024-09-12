@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: open-sans,Roboto;
+    background-image: -webkit-linear-gradient(#a9f1df,#ffbbbb);
+}
+
+/* The sidebar */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: width 0.5s ease;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+/* Sidebar links */
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Make the links visible and slide in when the sidebar opens */
+.sidebar.open a {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Change color on hover */
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+/* The hamburger icon */
+.hamburger {
+    font-family: open-sans;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+/* Close button inside the sidebar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 36px;
+    cursor: pointer;
+    color: white;
+}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+  
+
+.logo{
+    height: 30px;
+    background-color: green;
+    font-size: 32px;
+    /* font-family: Poppins; */
+    padding:2rem;
+}
+header nav{
+    background-color: darkgreen;
+    display: flex;
+    justify-content: space-between;
+  align-items: center;
+}
+
+.search{
+    margin-right: 1rem;
+}
+.search input{
+    height: 20px;
+    width:fit-content;
+    padding: 2px;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+button i{
+    height: 15px;
+    width: 15px;
+}
+
+.about{
+    height:fit-content;
+    padding:4rem 2rem;
+    font-size: 18px;
+    text-align: justify;
+    justify-self:center;
+    background-color: cadetblue;
+}
+
+.btn1{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 1rem;
+    background-color: aquamarine;
+}
+.btn1 a{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+/* .btn button a{
+    color: black;
+} */
+.btn1 a:hover{
+    background-color: rgb(0, 0, 0);
+    font-weight: 600;
+    color: rgb(255, 0, 0);
+}
+
+
+ /* 1st yr */
+
+h1{
+    border: 0;
+    border-radius: 20px;
+    text-align: center;
+    background: linear-gradient(#6060d1de ,rgba(61, 192, 243, 0.932));
+    
+ }
+ .btnd{
+    display: flex;
+    justify-content: space-around;
+ }
+.btn {
+    display: flex;
+    background: #00b6d1;
+    padding: 14px 16px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    margin: 12px 0px;
+    cursor: pointer;
+    
+}
+.btnq{
+    display: flex;
+    justify-content: center;
+}
+.red{
+    background: #d10000;
+    padding: 14px 16px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+
+    
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+img{
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+
+}
+/* .para{
+    display: flex;
+    font-weight: bold;
+    justify-content: space-around;
+    
+} */
+.item {
+    border-radius: 30px;
+    background: #fcfcfc;
+    box-shadow: inset 21px 21px 36px #a4a4a4,
+                inset -21px -21px 36px #ffffff;
+    padding: 10px;
+    margin: 5px;
+    /* background: #a81eb4e7; */
+    /* border-radius: 12px; */
+    /* border: 1px dashed red; */
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    
+}
+
+.item-lang{
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 36px;
+}
+
+/* .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ; 
+    gap: 10px;
+} */
+
+.grid-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+}  
+@media screen and (max-width: 1145px) {
+    .grid-item{ 
+        grid-template-columns: 1fr; 
+    }
+    .blue{
+        display: none;
+    }
+}  
