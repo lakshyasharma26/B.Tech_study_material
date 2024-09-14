@@ -7,7 +7,7 @@
 
 body {
     font-family: open-sans,Roboto;
-    background-image: -webkit-linear-gradient(#a9f1df,#ffbbbb);
+    /* background-image: -webkit-linear-gradient(#a9f1df,#ffbbbb); */
 }
 
 /* The sidebar */
@@ -45,14 +45,20 @@ body {
 /* Change color on hover */
 .sidebar a:hover {
     background-color: #575757;
+    /* background-color: cadetblue; */
 }
 
 /* The hamburger icon */
 .hamburger {
+    visibility: hidden;
+    display: none;
     font-family: open-sans;
     font-size: 30px;
     cursor: pointer;
-    margin-left: 2rem;
+    margin-right: 2rem;
+    position:absolute ;
+    right: 0;
+    font-weight: 600;
 }
 
 /* Close button inside the sidebar */
@@ -65,76 +71,41 @@ body {
     color: white;
 }
 
-ul.breadcrumb {
-    padding: 10px 16px;
-    list-style: none;
-    background-color: #eee;
-  }
-  
-  /* Display list items side by side */
-  ul.breadcrumb li {
-    display: inline;
-    font-size: 18px;
-  }
-  
-  /* Add a slash symbol (/) before/behind each list item */
-  ul.breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
-  }
-  
-  /* Add a color to all links inside the list */
-  ul.breadcrumb li a {
-    color: #0275d8;
-    text-decoration: none;
-  }
-  
-  /* Add a color on mouse-over */
-  ul.breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
-  }
-  
 
 .logo{
     height: 30px;
-    background-color: green;
+    font-family: Roboto;
+    font-style:italic;
     font-size: 32px;
-    /* font-family: Poppins; */
-    padding:2rem;
+   font-weight: 800;
+    padding:2rem 1rem;
+    display: flex;
+    align-items: center; 
+    /* background-color: rgb(66, 66, 236); */
 }
+
+.logo img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
 header nav{
-    background-color: darkgreen;
     display: flex;
     justify-content: space-between;
   align-items: center;
-}
-
-.search{
-    margin-right: 1rem;
-}
-.search input{
-    height: 20px;
-    width:fit-content;
-    padding: 2px;
-    border-radius: 5px;
-}
-button:hover{
-    cursor: pointer;
-}
-button i{
-    height: 15px;
-    width: 15px;
+   /* background-color: cadetblue; */
 }
 
 .about{
     height:fit-content;
-    padding:4rem 2rem;
+    padding:1rem 2rem;
     font-size: 18px;
     text-align: justify;
     justify-self:center;
-    background-color: cadetblue;
+    line-height: 25px;
+    /* background-color: cadetblue; */
+   
 }
 
 .btn1{
@@ -142,12 +113,12 @@ button i{
     gap: 20px;
     justify-content: center;
     margin: 1rem;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 .btn1 a{
     padding: 10px 20px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     background-color: black;
     color: white;
     border-radius: 5px;
@@ -165,53 +136,61 @@ button i{
  /* 1st yr */
 
 h1{
-    border: 0;
-    border-radius: 20px;
+    margin: 2rem;
+    font-size: 40px;
+    font-family: poppins;
+    border-radius: 15px;
     text-align: center;
     background: linear-gradient(#6060d1de ,rgba(61, 192, 243, 0.932));
     
  }
+
  .btnd{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
  }
+
 .btn {
     display: flex;
     background: #00b6d1;
-    padding: 14px 16px;
+    padding: 10px 20px;
     color: white;
     border: none;
     border-radius: 6px;
-    font-weight: 700;
-    margin: 12px 0px;
+    font-weight: 800;
+    margin: .5rem 0px;
     cursor: pointer;
+    font-family: open-sans;
     
 }
+
 .btnq{
     display: flex;
     justify-content: center;
+   
 }
+
 .red{
     background: #d10000;
-    padding: 14px 16px;
+    padding: 10px 20px;
     color: white;
     border: none;
     border-radius: 6px;
     font-weight: 700;
-    margin-top: 20px;
-    cursor: pointer;
-
-    
+    cursor: pointer; 
 }
+
 .btn a{
     text-decoration: none;
     color: white;
 }
+
 img{
-    width: 250px;
-    height: 200px;
-    margin: 10px;
-    padding: 20px;
+    width: 340px;
+    height: 180px;
+    margin: .5rem;
+    border-radius: 15px;
 
 }
 /* .para{
@@ -221,25 +200,26 @@ img{
     
 } */
 .item {
-    border-radius: 30px;
-    background: #fcfcfc;
+    border-radius: 2px ;
+    border: 2px solid black;
+     background: #fcfcfc;
     box-shadow: inset 21px 21px 36px #a4a4a4,
-                inset -21px -21px 36px #ffffff;
+                inset -21px -21px 36px #ffffff; 
     padding: 10px;
     margin: 5px;
-    /* background: #a81eb4e7; */
-    /* border-radius: 12px; */
-    /* border: 1px dashed red; */
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    
+     /* background: #a81eb4e7; */
+    /* border-radius: 12px; */
+    /* border: 1px dashed red; */    
 }
 
 .item-lang{
     font-weight: 700;
     text-align: center;
-    padding-bottom: 36px;
+   font-size: 36px;
+   margin: 1rem;
 }
 
 /* .grid{
@@ -249,17 +229,25 @@ img{
 } */
 
 .grid-item{
+    justify-content: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    /* border: 2px solid black; */
+    grid-template-columns: .1fr .1fr .1fr ;
+    grid-template-rows: .5fr .5fr;
+    gap: 20px;
     border-radius: 20px;
+    /* border: 2px solid black; */
 }  
-@media screen and (max-width: 1145px) {
-    .grid-item{ 
-        grid-template-columns: 1fr; 
-    }
-    .blue{
-        display: none;
-    }
-}  
+
+footer{
+    position:relative ;
+    bottom: 0;
+    height: 60px;
+    font-family: Roboto;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
