@@ -167,10 +167,15 @@ h1{
 
 .btnq{
     display: flex;
-    justify-content: center;
-   
+    justify-content: center;  
+}
+.btnq a{
+    text-decoration: none;
 }
 
+.btnq a:hover{
+    font-weight: 600;
+}
 .red{
     background: #d10000;
     padding: 10px 20px;
