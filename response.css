@@ -5,15 +5,26 @@
     .blue{
         display: none;
     }
+    section {
+        padding: 110px 3% 60px;
+    }
+    .contact{
+        max-width:100vw;
+        grid-template-columns: 1fr;
+    }
+    .end {
+        padding: 15px 3%;
+    }
+
 }  
 
 @media(max-width:700px){
     .hamburger{
         visibility:unset;
     display: unset;
+    } 
 }
-    }
+
+
+
     
-/* @media (max-width:547px) {
-    
-} */
